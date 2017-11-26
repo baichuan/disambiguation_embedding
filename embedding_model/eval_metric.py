@@ -34,7 +34,7 @@ class Evaluator():
 
         # compute cluster-level F1
         # let's denote C(r) as clustering result and T(k) as partition (ground-truth)
-        # construct r * k contingency table
+        # construct r * k contingency table for clustering purpose 
         r_k_table = []
         for v1 in predict_label_dict.itervalues():
             k_list = []

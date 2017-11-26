@@ -9,7 +9,10 @@ This repository provides a reference implementation of name disambiguation using
 * [Python 2.7](https://www.python.org/) 
 * [Numpy](http://www.numpy.org/)
 * [Networkx](https://networkx.github.io/)
+<<<<<<< HEAD
 * [scikit-learn](http://scikit-learn.org/stable/)
+=======
+>>>>>>> aecaf08a465b8ab98b23e149723def53b8e7700b
 
 ### Basic Usage
 
