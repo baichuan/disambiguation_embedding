@@ -12,7 +12,6 @@ def parse_args():
     """
     parser_arg = argparse.ArgumentParser(description =
                                          "run embedding for name disambiguation")
-    parser_arg.add_argument('data_source', help = 'data source')
     parser_arg.add_argument("file_path", help = 'input file name')
     parser_arg.add_argument("latent_dimen", type = int, default = 20,
                             help = 'number of dimension in embedding')
@@ -31,12 +30,7 @@ def main(args):
     pipeline for representation learning for all papers for a given name reference
     """
     dataset = parser.DataSet(args.file_path)
-     
-    if args.data_source == "arnetminer":
-        dataset.reader_arnetminer()
-    elif args.data_source == "citeseerx":
-        dataset.reader_citeseerx()
-
+    dataset.reader_arnetminer()
     bpr_optimizer = embedding.BprOptimizer(args.latent_dimen, args.alpha,
                                            args.matrix_reg)
     pp_sampler = sampler.CoauthorGraphSampler()
