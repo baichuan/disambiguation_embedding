@@ -23,8 +23,18 @@ You can check out the hyper-parameter options using:<br/>
 
 #### Output
 The output is Macro-F1 result and ranking loss value in each epoch
+In the meanwhile, we also generate final embedding file, which contains *n+1* lines for the document collection with *n* documents. 
+The first line has the following format:
 
-### Citing
+	num_of_docs dim_of_representation
+
+The next *n* lines are as follows:
+	
+	doc_id dim1 dim2 ... dimd
+
+where dim1, ... , dimd is the *d*-dimensional representation learned by the proposed embedding model.
+
+### Reference
 If you find this work useful for your research, please consider citing the following paper:
 
 	@inproceedings{zhang-cikm2017,
