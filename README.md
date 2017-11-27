@@ -22,8 +22,8 @@ You can check out the hyper-parameter options using:<br/>
 	``python embedding_model/main.py --help``
 
 #### Output
-The output is Macro-F1 result and ranking loss value in each epoch
-In the meanwhile, we also generate final embedding file, which contains *n+1* lines for the document collection with *n* documents. 
+The output is Macro-F1 result and ranking loss value in each epoch.
+In the meanwhile, we also generate final embedding file in emb/ directory, which contains *n+1* lines for the document collection with *n* documents. 
 The first line has the following format:
 
 	num_of_docs dim_of_representation
