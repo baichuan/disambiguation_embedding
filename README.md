@@ -14,8 +14,8 @@ This repository provides a reference implementation of name disambiguation using
 ### Basic Usage
 
 #### Example
-To run disambiguation embedding code on name reference "Lei Wang", execute the following command from the project home directory:<br/>
-	``python embedding_model/main.py sampled_data/lei_wang.xml 20 0.02 0.005 100 'uniform'``
+To run disambiguation embedding code, execute the following command from the project home directory:<br/>
+	``python embedding_model/main.py sampled_data/data.xml 20 0.02 0.005 100 'uniform'``
   
 #### Options
 You can check out the hyper-parameter options using:<br/>
